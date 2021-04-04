@@ -32,6 +32,15 @@
 /* ----------------------------------------------------------------
      [ 01 Start Basics ]
 -----------------------------------------------------------------*/
+@font-face {
+  font-family: 'latolight';
+  src: url('https://richapandya.com/css/fonts/lato-light-webfont.woff2') format('woff2'),
+       url('https://richapandya.com/css/fonts/lato-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -52,8 +61,12 @@ body {
   overflow-x: hidden !important;
 }
 
+.bg2 {
+  background: #fafafb;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Rubik', serif;
 }
 
 p {
@@ -61,6 +74,9 @@ p {
   color: #222;
   line-height: 1.8;
   margin: 0;
+}
+.subheading {
+  color: #fafafb;
 }
 
 img {
@@ -99,23 +115,54 @@ span, a, a:hover {
   margin-bottom: 40px;
 
 }
+.somethinginteresting {
+  margin-bottom: 0px;
+}
+
 section:hover .section-head h4 {
   color: transparent;
   -webkit-text-stroke: 1px white;
 }
 
-.wave {
+.firstwave {
   position: absolute;
   width: 100%;
   left: 0;
   top: -1px;
-  fill: white;
-}
-.wave.dark {
   fill: #fff;
 }
 
+.secondwave {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -1px;
+  fill:#fff;
+}
+.thirdwave {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -1px;
+  fill: #fafafb;
+}
+.fourthwave {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -1px;
+  fill: #fff;
+}
+
+.wave.dark {
+  fill:#fff;
+}
+
 .bg-dark {
+  background: #fff !important;
+}
+
+.bg-dark-sec {
   background: #fafafb !important;
 }
 
@@ -127,8 +174,13 @@ section:hover .section-head h4 {
   position: relative;
 }
 
+.tmspace {
+  margin: 0px;
+}
+
 .full-width {
   width: 100% !important;
+  font-family: 'Rubik', serif;
 }
 
 .lg-line-height {
@@ -172,6 +224,7 @@ section:hover .section-head h4 {
   display: inline-block;
   position: relative;
   text-align: center;
+  font-family: 'Rubik', serif;
   font-size: smaller;
   font-weight: bold;
 }
@@ -372,6 +425,11 @@ section:hover .section-head h4 {
 .butn-bord:hover span {
   color: #fff;
 }
+.centre {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
 
 /* ----------------------------------------------------------------
      [ End Buttons ]
@@ -442,6 +500,7 @@ section:hover .section-head h4 {
   letter-spacing: 4px;
   font-weight: bold;
   color: white;
+  font-family: ;
   text-transform: uppercase;
   letter-spacing: 4px;
   padding: 5px 10px;
@@ -560,7 +619,7 @@ section:hover .section-head h4 {
 .hero {
   z-index: 3;
 }
-.hero .wave {
+.hero .firstwave {
   -webkit-transform: rotate(180deg) translateY(100%);
           transform: rotate(180deg) translateY(100%);
   top: 1px;
@@ -1195,6 +1254,12 @@ section:hover .section-head h4 {
 /* ----------------------------------------------------------------
      [ 09 Start Contact ]
 -----------------------------------------------------------------*/
+
+.elfsight-app-e6a2c1f5-55c2-40c4-9a59-5761b6fcd27b {
+  display: block;
+  text-align: center;
+}
+
 .contact .info {
   padding-top: 30px;
 }
